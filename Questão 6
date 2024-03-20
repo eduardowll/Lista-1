@@ -1,0 +1,24 @@
+#include <iostream>
+using namespace std;
+
+/*
+O custo ao consumidor de um carro novo é a soma do custo de fábrica com a porcentagem do
+distribuidor e dos impostos, ambos aplicados ao custo de fábrica. Supondo que a porcentagem
+do distribuidor seja de 28% e os impostos de 45%, escreva um algoritmo que leia o custo de
+fábrica de um carro e escreva o custo ao consumidor.
+*/
+
+int main()
+{
+    float cc;
+    float cf;
+    float pd;
+    float impos;
+    
+    cout << "Qual o custo de fábrica do carro?: ";
+    cin >> cf;
+    
+    cc = (cf * 0.76) + cf;
+    
+    cout << "O custo ao consumidor será: " << cc << " reais.";
+}
