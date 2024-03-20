@@ -1,0 +1,28 @@
+#include <iostream>
+using namespace std;
+
+/*
+Leia dois valores inteiros nas variáveis Val1 e Val2, troque os seus conteúdos e escreva o 
+resultado. Exemplo: Se o valor lido foi 10 para a variável Val1 e 11 para a variável Val2, depois 
+da troca o algoritmo terá que escreva Val1 = 11 e Val2 = 10. 
+*/
+
+int main ()
+{
+	int x;
+	int y;
+	int z;
+	
+	cout << "Escreva um valor inteiro pra x: ";
+	cin >> x;
+	cout << "Escreva um valor inteiro pra y: ";
+	cin >> y;
+	
+	z = x;
+	x = y;
+	y = z;
+	
+	
+	cout << "Novo valor de x: " << x;
+	cout << "\nNovo valor de y: " << y;
+}
