@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+
+/*
+Leia o valor de uma compra nas Lojas Sua Melhor Compra e mostre o valor das prestações de
+acordo com a quantidade de parcelas desejada pelo usuário. A loja está vendendo seus produtos
+a vista ou parcelado em até 10 vezes sem juros. 
+*/
+
+int main()
+{
+    int valorcmp;
+    int valorprest;
+    int qntparce;
+   
+    cout << "Bem vindo às lojas, Sua Melhor Compra\n";
+    cout << "Qual o valor da sua compra?: "; 
+    cin >> valorcmp;
+    cout << "Em quantas parcelas irá dividir?(se for pagar à vista, digitar 1): ";
+    cin >> qntparce;
+    
+    valorprest = valorcmp/qntparce;
+    
+    cout << "O valor das suas prestações será: " << valorprest << " reais"; 
+}
