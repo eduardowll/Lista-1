@@ -1,0 +1,21 @@
+#include <iostream>
+using namespace std;
+
+/*
+Leia um número inteiro N e um percentual qualquer e escreva qual o valor do percentual
+aplicado ao número.
+*/
+
+int main()
+{
+    double N;
+    double porcent;
+    
+    cout << "CALCULADOR DE PORCENTAGENS\n";
+    cout << "Digite um numero: ";
+    cin >> N;
+    cout << "Digite a porcentagem desejada: ";
+    cin >> porcent;
+    
+    cout << "O valor percentual: " << porcent * (N/100) << "%";
+}
