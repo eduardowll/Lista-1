@@ -1,0 +1,27 @@
+#include <iostream>
+using namespace std;
+
+int main ()
+{
+	//Leia a idade de uma pessoa expressa em anos, meses e dias e mostre-a expressa apenas em dias. 
+
+	int anos;
+	int meses;
+	int dias;
+	int total;
+	string nome;
+	
+	cout << "Hoje vamos descobrir quantos dias de vida voce tem\n";
+	cout << "Qual seu nome?: ";
+	cin >> nome;
+	cout << "Quantos anos voce tem?: ";
+	cin >> anos;
+	cout << "Quantos meses voce tem?: ";
+	cin >> meses;
+	cout << "Quantos dias voce tem?: ";
+	cin >> dias;
+	
+	total = anos*365 + meses*30 + dias;
+	
+	cout << "Voce tem um total de: " << total  << " dias vividos";
+} 
