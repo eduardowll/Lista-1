@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+
+/*
+Leia o tempo de duração de um evento expresso em segundos, converta-o e mostre-o expresso
+em horas, minutos e segundos. 
+*/
+
+int main()
+{
+    int horas;
+    int minutos;
+    int segundos;
+    
+    cout << "Quantos segundos durou o evento?: ";
+    cin >> segundos;
+    
+    horas = segundos/3600;
+    segundos = segundos%3600;
+    minutos = segundos/60;
+    segundos = segundos%60;
+    
+    
+    cout << "Então o evento durou:\n" << horas << " hora(s)\n" << minutos << " minuto(s)\n" << segundos << " segundo(s)";
+}
