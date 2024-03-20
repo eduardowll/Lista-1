@@ -9,8 +9,8 @@ a vista ou parcelado em até 10 vezes sem juros.
 
 int main()
 {
-    int valorcmp;
-    int valorprest;
+    double valorcmp;
+    double valorprest;
     int qntparce;
    
     cout << "Bem vindo às lojas, Sua Melhor Compra\n";
