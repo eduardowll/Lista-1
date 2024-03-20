@@ -1,0 +1,24 @@
+#include <iostream>
+using namespace std;
+
+/*
+Escreva o valor em reais (R$) de um valor lido em dólares (US$). O algoritmo deverá solicitar o 
+valor da cotação do dólar e também a quantidade de dólares que o usuário deseja converter.
+*/  
+
+int main()
+{
+	double reais;
+	double vldolar;
+	double qntdolar;
+	
+	cout << "CONVERSOR DE DOLAR PARA REAL\n";
+	cout << "Quantos dolares voce quer converter?: ";
+	cin >> qntdolar;
+	cout << "Qual a cotacao do dolar hoje?: ";
+	cin >> vldolar;
+	
+	reais = vldolar * qntdolar;
+	
+	cout << qntdolar << " dolar(es) vai ser igual ha: " << reais << " reais.";
+}
