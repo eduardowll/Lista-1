@@ -1,0 +1,48 @@
+#include <iostream>
+using namespace std;
+
+/*
+Leia dois valores inteiros para as variáveis A e B e efetue as operações de adição, subtração,
+multiplicação e divisão de A por B, apresentando ao final os resultados obtidos. Em seguida leia
+dois valores lógicos C e D e efetue as operações de negação (de cada um dos valores), conjunção
+(E) e disjunção (OU), apresentando ao final os resultados obtidos. 
+*/
+
+int main()
+{
+    int A, B, soma, multipli, subtra;
+    float divisao;
+    bool C, D, negacaoC, negacaoD, conjuncao, disjuncao;
+    
+    cout << "PARTE UM\n";
+    cout << "Coloque um valor inteiro: ";
+    cin >> A;
+    cout << "Coloque outro valor inteiro: ";
+    cin >> B;
+    
+    soma = A + B;
+    subtra = A - B;
+    multipli = A * B;
+    divisao = A/B;
+    
+    cout << "A soma é: " << soma;
+    cout << "\nA subtração é: " << subtra;
+    cout << "\nA multiplicação é: " << multipli;
+    cout << "\nA divisão é: " << divisao;
+    
+    cout << "\nPARTE DOIS";
+    cout << "\nColoque um valor lógico (1 ou 0) pra C: ";
+    cin >> C;
+    cout << "Coloque um valor lógico (1 ou 0) pra D: ";
+    cin >> D;
+    
+    negacaoC = !C;
+    negacaoD = !D;
+    conjuncao = C && D;
+    disjuncao = C || D;
+    
+    cout << "\nNegação de C: " << negacaoC;
+    cout << "\nNegação de D: " << negacaoD;
+    cout << "\nConjunção de C e D: " << conjuncao;
+    cout << "\nDisjunção de C ou D: " << disjuncao;
+}
